@@ -1,0 +1,1 @@
+web: gunicorn PLD.wsgi --log-file -

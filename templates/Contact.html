@@ -1,0 +1,103 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+<body>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>R&G</title>
+    <link href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'css/Contactos.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/libreria.css' %}">
+    <link href="{% static 'vendor/fontawesome-free/css/all.min.css' %}" rel="stylesheet" type="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">   
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet"> -->
+    <header>
+        <input type="Checkbox" id="btn-menu">
+        <label for="btn-menu"><img src="../static/img/list.png" alt=""></label>
+        <nav class="menu">
+            <ul>
+                <li><a href="http://127.0.0.1:8000/Home/">Inicio</a></li>
+                <li><a href="http://127.0.0.1:8000/Home/#services">Servicios</a></li>
+                <li><a href="">Contáctenos</a></li>
+                <li><a href="http://127.0.0.1:8000/AboutUs/">Acerca de</a></li>
+            </ul>
+            
+        </nav>
+        <section class="textos-header">
+            <p>
+                Iustitiae comes de divinitatis
+                <span>
+                        R & g <br>
+                    ABOGADOS
+                </span>
+                &mdash; since 1998 &mdash;
+            </p>
+        </section>
+        <svg class="wave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <path fill="white" fill-opacity="1" d="M0,256L1440,160L1440,320L0,320Z"></path>
+          </svg>
+    </header>
+    <main>
+        <section class="contenedor sobre-nosotros" id="SecContact">
+            <h2 class="titulo">¡Contáctenos!</h2>
+            <div class="contenedor-sobre-nosotros"data-aos="fade-up" data-aos-duration="1000" >
+                <img class="AboutUs" src="../static/img/undraw_contact_us_15o2.png" >
+                <div class="contenido-textos">
+                    <h3 id="titulo">Teléfonos</h3>
+                    <h3><span><i class="fas fa-mobile-alt"></i></i></span> 317-414-1283</h3>
+                    <h3><span><i class="fas fa-phone"></i></i></span> 032-8801143</h3><br>
+                    <h3 id="titulo">Correo electrónico</h3>
+                    <h3><span><i class="fas fa-envelope-square"></i></i></span> fultonruizlaw@yahoo.com</h3>
+                    <h3><span><i class="fas fa-envelope-square"></i></i></span> R&GAbogados_Consultores@outlook.com</h3>
+
+
+
+                </div>
+            </div>
+        </section>
+        
+    
+    </main>
+  
+    <footer>
+        <div class="contenedor-footer">
+           
+         
+            <div class="content-foo">
+                <img src="../static/img/NewGenomaGames2.png" alt="">
+
+            </div>
+          
+           
+        </div>
+        <h2 class="titulo-final">&copy; MediaKing Ingeniería </h2>
+        <div class="fab" >
+            <h3 class="fab fa-instagram"></h3>
+            <h3 class="fab fa-facebook"></h3>
+            <h3 class="fab fa-whatsapp"></h3>
+        </div>
+       
+
+        
+
+
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="{% static 'vendor/jquery/ControlMenu.js' %}"></script>
+    <script src="{% static 'vendor/jquery/jquery.min.js' %}"></script>
+    <script src="https://kit.fontawesome.com/29b59548f8.js" crossorigin="anonymous"></script>
+    <script src="{% static 'js/animacionesContact.js' %}"></script>
+    <script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9.15.2/dist/sweetalert2.all.min.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script src="{% static 'js/app.js' %}"></script> -->
+
+
+
+</body>
+</html>
