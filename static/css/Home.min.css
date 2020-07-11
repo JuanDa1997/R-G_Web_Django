@@ -6,7 +6,6 @@
 
 body{
     font-family: 'Poppins', sans-serif;    
-
 }
 
 .contenedor{
@@ -33,7 +32,6 @@ header{
     position: relative;
 }
 
-
 /* titulo animado */
 @import url(https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap);
 
@@ -54,37 +52,32 @@ header{
 
 .textos-header span{
     background-image: -webkit-linear-gradient(rgb(255, 72, 0) 50%, rgb(255, 255, 255) 50%);
-
-  background-repeat: repeat-y;
-  background-position: 0 0;
-  background-size: 100% 50px;
-  -webkit-text-fill-color: transparent;
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
-  -webkit-animation: stripes 5s linear infinite;
-  animation: stripes 5s linear infinite;
-  
-
+    background-repeat: repeat-y;
+    background-position: 0 0;
+    background-size: 100% 50px;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    -webkit-animation: stripes 5s linear infinite;
+    animation: stripes 5s linear infinite;
 }
-
-
 
 @-webkit-keyframes stripes {
   0% {
     background-position: 0 -50px;
   }
-
-
 }
 
 @keyframes stripes {
   0% {
     background-position: 0 -50px;
   }
- 
 }
 
+.menu .acerca-de{
+    color: silver;
+}
 
 .textos-header span{
   font: 500 4em/1 "poppins", sans-serif;
@@ -92,30 +85,19 @@ header{
   padding: .25em 0 .325em;
   display: block;
   margin: 0 auto;
-  
-
-
 }
-
 /* fin titulo animado */
-
 #btn-menu{
     display: none;
 }
 
 header label{
-    /* display: block; */
-    /* width: 50px;
-    height: 70px; */
     margin: 10px;
     padding: 20px;
     background-color: #30cfd0;
     border-radius: 50%;
-    /* border-right: 1px solid #fff; */
     display: none;
 }
-
-
 
 header label img{
     width: 40px;
@@ -123,7 +105,6 @@ header label img{
 
 header label:hover{
     cursor:pointer;
-
 }
 
 .menu{
@@ -134,34 +115,25 @@ header label:hover{
     position: fixed;
     z-index: 20;
     backdrop-filter: blur(10px); 
-
 }
-
-
 
 .menu ul  {
     list-style: none;
     color: white;
     display: flex;
     float: right;
-
 }
 
 .menu ul li a{
     text-decoration: none;
     padding:20px 30px 0 0;
     color: white; 
-   
 }
 
 .menu ul li a:hover{
     color: silver;
     transition: all .5s;
 }
-
-/* nav > a:hover{
-    background: silver;
-} */
 
 .wave{
     position: absolute;
@@ -191,27 +163,19 @@ header .textos-header{
 }
 
 /* aboutus */
-
 .contenedor-sobre-nosotros{
     display: flex;
     justify-content: space-evenly;
-    
 }
 
 .AboutUs{
-    
     width: 40%;
     height: 55%;
-
-   
 }
-
 
 .sobre-nosotros .contenido-textos{
-    width: 58%;
-    
+    width: 58%;    
 }
-
 
 .contenido-textos{
     padding-top: 50px;
@@ -221,33 +185,25 @@ header .textos-header{
     margin-bottom: 15px;
     font-size: 30px;
 }
-
 /* Nuestra sede */
-
 .contenedor-sobre-nosotros2{
     display: flex;
     justify-content: space-evenly;
-    
-    
 }
 
 .AboutUs2{
-    
     width: 40%;
     height: 55%;
-
-   
 }
 
 #secSede .titulo{
-  text-align: center;
+    text-align: center;
    padding-top: 180px;
 }
-.sobre-nosotros2 .contenido-textos2{
-    width: 58%;
-    
-}
 
+.sobre-nosotros2 .contenido-textos2{
+    width: 58%; 
+}
 
 .contenido-textos2{
     padding-top: 50px;
@@ -277,8 +233,6 @@ header .textos-header{
     overflow: hidden;
     position: relative;
     cursor: pointer;
-    /* box-shadow: ; */
-
 }
 
 .imagen-port > img{
@@ -301,11 +255,7 @@ header .textos-header{
     align-items: center;
     flex-direction: column;
 }
-
-
-
 /* Our team */
-
 .about-services{
     background: #fff;
     padding-bottom: 30px;
@@ -313,13 +263,11 @@ header .textos-header{
 }
 
 .Divisor{
-    
     width: 50%;
     height: 1px;
     border-radius: 20px;
     background: silver;
-   margin: auto;
-    
+    margin: auto; 
 }
 
 .servicio-cont{
@@ -327,8 +275,6 @@ header .textos-header{
     justify-content: space-evenly;
     align-items: center;
 }
-
-
 
 .servicio-ind{
     width: 28%;
@@ -340,8 +286,6 @@ header .textos-header{
     cursor: pointer;
 }
 
-
-
 .servicio-ind h3{
     margin: 10px 0;
     font-size: 24px;
@@ -351,9 +295,7 @@ header .textos-header{
     font-weight: 300;
     text-align: justify;
 }
-
 /* footer */
-
 footer{
     background: #414141;
     padding: 60px 0 30px 0;
@@ -369,7 +311,6 @@ footer{
     padding-bottom: 50px;
     border-bottom: 1px solid #ccc;
     margin-bottom: 20px;
-
 }
 
 .content-foo{
@@ -391,7 +332,6 @@ footer{
     color:#9e9797;
 }
 
-
 .fa-instagram{
     width: 1%;
     color:#9e9797;
@@ -399,7 +339,6 @@ footer{
     text-align: center;
     padding-right: 30px;
     background-position: center;
-
 }
 
 .fa-facebook{
@@ -409,34 +348,26 @@ footer{
     text-align: center;
     padding-right: 30px;
     background-position: center;
-
 }
 /* hover */
 .fa-whatsapp:hover{
-    
    color: yellowgreen;
    transition: all .5s;
-
 }
-
 
 .fa-instagram:hover{
     color: red;
     transition: all .5s;
-
 }
 
 .fa-facebook:hover{
    color: royalblue;
    transition: all .5s;
-
 }
 
 .content-foo img{
     width: 10%;
-
 }
-
 
 .content-foo p{
     color: #ccc;
@@ -451,24 +382,20 @@ footer{
 
 .ubicacion{
     padding-top: 200px;
-
 }
+
 .ubicacion h1{
     text-align: center;
-   
 }
 
 .ubicacion iframe{
     width: 100%;
     padding-top: 40px;
-   
 }
 
 html{
-scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
-
-
 
 @media screen and (max-width:1024px){
     header{
@@ -477,26 +404,18 @@ scroll-behavior: smooth;
     }
 
     .textos-header{
-    
         text-align: center;
     }
+
     .textos-header p{
         margin-top:100px ;
         font-size: 9px;
-        
     }
     
-    
-    /* .slider-contenedor{
-        height: 800px;
-    } */
-
-   
     .contenedor-sobre-nosotros{
         flex-direction: column;
         justify-content: center;
-        align-items: center;
-        
+        align-items: center; 
     }
 
     .sobre-nosotros .contenido-textos{
@@ -506,36 +425,22 @@ scroll-behavior: smooth;
     .sobre-nosotros .contenido-textos h3{
         font-size: 30px; 
         text-align: left;
-        /* text-align: center; */
-        
-        
-       
-
     }
 
     .contenedor-sobre-nosotros2{
         flex-direction: column-reverse;
         justify-content: center;
         align-items: center;
-        
     }
     
-
     .AboutUs{
         width: 40%;
     }
-
-
     /* Galeria */
-
     .imagen-port{
         width: 44%;
     }
-
- 
- 
     /* servicios */
-
     .servicio-cont{
         justify-content: center;
         flex-direction: column;
@@ -544,9 +449,7 @@ scroll-behavior: smooth;
     .servicio-ind{
         width: 100%;
         text-align: center;
-
     }
-
 
     .servicio-ind:nth-child(1), .servicio-ind:nth-child(1){
         margin-bottom: 60px;
@@ -554,8 +457,9 @@ scroll-behavior: smooth;
 
     .servicio-ind img{
         width: 20%;
-       padding-top: 50px;
+        padding-top: 50px;
     }
+
     .titulo-final{
         margin: auto;
         width: 70%;
@@ -570,28 +474,27 @@ scroll-behavior: smooth;
     header{
         height: 400px;
     }
+
     .textos-header p{
         margin-top:25px ;
-
         font-size: 9px;
-        
     }
+
     .content-foo img{
-        width: 30%;
+        width: 10%;
     }
 
     header label {
         display: block;
         position: fixed;
         z-index: 100;
-    }   
+    }
+
     .sobre-nosotros .contenido-textos h3{
         font-size: 20px; 
     }
 
     .menu{
-        /* position: absolute; */
-        /* float: right; */
         padding: 20px 20px 0 0;
         padding-top: 100px;
         padding-left: 30px;
@@ -600,15 +503,12 @@ scroll-behavior: smooth;
         width: 100%;
         margin-top: -1200px;
         transition: all 1s;
-    
     }
 
-   
     .menu ul{
         width: 90%;
         flex-direction: column;
-        float: left;
-        
+        float: left;  
     }
 
     .menu li{
@@ -632,20 +532,22 @@ scroll-behavior: smooth;
 
    .contenido-textos2 h3{
        font-size: 20px;
-   }
+    }
 
    .servicio-ind h3{
        font-size: 20px;
-   }
+    }
 
+   .ubicacion h1 {
+        font-size: 25px;
+    }
 }
 
 @media screen and (max-width:500px){
-    .textos-header p{
-        
+    .textos-header p{   
         font-size: 9px;
-        
     }
+
     .titulo{
         font-size: 25px;
     }
@@ -656,16 +558,17 @@ scroll-behavior: smooth;
 
    .contenido-textos2 h3{
        font-size: 20px;
-   }
+    }
 
    .servicio-ind h3{
        font-size: 20px;
     }
+
    .textos-header p{
         margin-top:25px ;
         font-size: 9px;
-    
     }
+
     .content-foo img{
         width: 30%;
     }
@@ -682,20 +585,25 @@ scroll-behavior: smooth;
         width:50%;
     }
 
+    .ubicacion h1 {
+        font-size: 25px;
+    }
+}
+
 @media screen and (max-width:414px) {
     header{
         height: 500px;
     }
     
     .textos-header{
-    
         text-align: center;
     }
+
     .textos-header p{
         margin-top:100px;
-        font-size: 7px;
-        
+        font-size: 7px; 
     }
+
     .menu{
         padding: 20px 20px 0 0;
         padding-top: 100px;
@@ -703,9 +611,9 @@ scroll-behavior: smooth;
         background: slateblue;
         height: 100%;
         width: 100%;
-        
         transition: all 1s;
     }
+
     .wave{
         display: none;
     }
@@ -718,16 +626,14 @@ scroll-behavior: smooth;
         padding-bottom: 50px;
         border-bottom: 1px solid #ccc;
         margin-bottom: 20px;
-    
     }
-    
     
     .content-foo img{
         width: 30%;
     }
 
     .titulo{
-        font-size: 30px;
+        font-size: 25px;
     }
 
     .contenedor-sobre-nosotros .contenido-textos h3{
@@ -742,8 +648,6 @@ scroll-behavior: smooth;
         font-size: 20px;
     }
     
-   
-
     .contenido-textos2 h3{
         font-size: 20px;
         text-align: center;
@@ -761,6 +665,14 @@ scroll-behavior: smooth;
 
     .servicio-ind h3{
         font-size: 20px;
+    }
+
+    .ubicacion h1 {
+        font-size: 25px;
+    }
+
+    .titulo-final{
+        font-size: 15px;
     }
 }
 
@@ -769,13 +681,12 @@ scroll-behavior: smooth;
 
 @media screen and (max-width:360px) {
     .textos-header{
-
         text-align: center;
     }
+
     .textos-header p{
         margin-top:100px ;
         font-size:6px;
-        
     }
     
     .menu{
@@ -785,9 +696,9 @@ scroll-behavior: smooth;
         background: slateblue;
         height: 100%;
         width: 100%;
-        
         transition: all 1s;
     }
+
     .wave{
         display: none;
     }
@@ -796,20 +707,14 @@ scroll-behavior: smooth;
         font-size: 25px;
     }
 
-
     .sobre-nosotros .contenido-textos h3{
-        
         font-size: 20px; 
-        /* text-align: left; */
         text-align: center;
-        
         color: black;
     }
 
     .sobre-nosotros .AboutUs{
-        width: 70%;
-        
-        
+        width: 70%;   
     }
 
     .contenido-textos2 h3{
@@ -835,10 +740,15 @@ scroll-behavior: smooth;
         padding-bottom: 50px;
         border-bottom: 1px solid #ccc;
         margin-bottom: 20px;
-    
     }
 
+    .ubicacion h1 {
+        font-size: 25px;
+    }
     
+    .titulo-final{
+        font-size: 15px;
+    }
 }
 
 @media screen and (max-width:320px) {
@@ -847,14 +757,14 @@ scroll-behavior: smooth;
     }
     
     .textos-header{
-
         text-align: center;
     }
+
     .textos-header p{
         margin-top:100px ;
-        font-size: 5px;
-        
+        font-size: 6px;   
     }
+
     .menu{
         padding: 20px 20px 0 0;
         padding-top: 100px;
@@ -862,9 +772,9 @@ scroll-behavior: smooth;
         background: slateblue;
         height: 100%;
         width: 100%;
-        
         transition: all 1s;
     }
+
     .wave{
         display: none;
     }
@@ -877,7 +787,6 @@ scroll-behavior: smooth;
         padding-bottom: 50px;
         border-bottom: 1px solid #ccc;
         margin-bottom: 20px;
-    
     }
 
     .contenedor-sobre-nosotros .contenido-textos h3{
@@ -902,18 +811,71 @@ scroll-behavior: smooth;
         font-size: 15px;
     }
 
-
+    .titulo-final{
+        font-size: 15px;
+    }
     
+    .titulo{
+        font-size: 20px;
+    }
+
+    header label{
+        margin: 10px;
+        padding: 10px;
+        background-color: #30cfd0;
+        border-radius: 50%;
+    }
+
+    header label img{
+        width: 30px;
+    }   
+}
+
+@media screen and (max-width:280px){
+    .textos-header{
+        width: 100%;
+        text-align: center;
+    }
+
+    .textos-header p{
+        font-size: 4px;
+    }
+
+    .texto-AboutUs{
+        width: 100%;
+        left: 0; 
+        text-align: center;
+        position: absolute;
+    }
+
+    header label{
+        margin: 10px;
+        padding: 7px;
+        background-color: #30cfd0;
+        border-radius: 50%;
+    }
+
+    header label img{
+        width: 23px;
+    }
+
+    .menu{
+        font-size: 10px;
+    }
 }
 
 @media screen and (max-width:250px) {
-    .textos-header p{
-        margin-top:100px ;
-        font-size: 3px;
-        
+    header{
+        height: 400px;
     }
+
+    .textos-header p{
+        margin-top:100px;
+        font-size: 4px;    
+    }
+
     .contenedor-sobre-nosotros .contenido-textos h3{
-        font-size: 12px;
+        font-size: 12px;    
     }
 
     .AboutUs{
@@ -929,19 +891,34 @@ scroll-behavior: smooth;
         flex-direction: column-reverse;
         align-items: center;
     }
+
     .titulo{
-        font-size: 20px;
+        font-size: 17px;
     }
 
     .ubicacion h1{
-        font-size: 20px;
+        font-size: 17px;
+    }
+
+    .menu{
+        font-size: 10px;
+    }
+
+    header label{
+        margin: 10px;
+        padding: 7px;
+        background-color: #30cfd0;
+        border-radius: 50%;
+    }
+
+    header label img{
+        width: 23px;
     }
 }
 
-@media screen and (max-width:200px) {
-    
+@media screen and (max-width:200px) {  
     header{
-        height: 300px;
+        height: 200px;
     }
 
     .menu{
@@ -951,14 +928,13 @@ scroll-behavior: smooth;
         background: slateblue;
         height: 100%;
         width: 100%;
-        
+        font-size: 10px;
         transition: all 1s;
     }
 
     .textos-header{
         align-items: center;
         padding-top: 200px;
-        
     }
 
     .wave{
@@ -983,7 +959,6 @@ scroll-behavior: smooth;
         align-items: center;
     }
   
-
     .ubicacion h1{
         font-size: 15px;
     }
@@ -995,12 +970,139 @@ scroll-behavior: smooth;
     .titulo-final{
         font-size: 10px;
     }
+
    .servicio-ind h3{
        font-size: 10px;
-   }
+    }
+
+   header label{
+        margin: 10px;
+        padding: 7px;
+        background-color: #30cfd0;
+        border-radius: 50%;
+    }
+
+    header label img{
+        width: 23px;
+    }
+
+    .textos-header p{
+        font-size: 3px;
+        margin-top: 50px;     
+    }
 }
 
+@media screen and (max-width:176px) {
+    .textos-header{
+        width: 100%;
+        text-align: center;
+    }
 
+    .textos-header p{
+        font-size: 2px;
+    }
 
+    .texto-AboutUs{
+        width: 100%;
+        left: 0; 
+        text-align: center;
+        position: absolute;
+    }
+    
+    .wave{
+        display: none;
+    }
+
+    .Noticias{
+        display: none;
+    }
+
+    .sobre-nosotros .contenido-textos{
+        text-align: center;
+        align-items: center;
+        width: 90%;   
+    }
+
+    .sobre-nosotros .contenido-textos h3{
+        font-size: 10px; 
+        text-align: center;
+    }
+
+    .sobre-nosotros .contenido-textos p{
+        font-size: 5px; 
+        text-align: center;
+        color: black;
+    }
+    
+    .AboutUs{
+        width: 50%;
+    }
+    /* Galeria */
+    .imagen-port{
+        width: 44%;
+    }
+    /* clientes */
+    .cards{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contenido-texto-card{
+        font-size: 9px;
+    }
+
+    .contenido-texto-card h4{
+        font-size: 9px;
+    }
+    
+    .cards .card{
+        width: 90%;
+        height: 300px
+    }
+    /* servicios */
+    .servicio-cont{
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .servicio-ind{
+        width: 100%;
+        text-align: center;
+    }
+
+    .servicio-ind h3{
+        font-size: 10px;
+    }
+    
+
+    .servicio-ind img{
+        width: 30%;
+        padding-top: 50px;
+    }
+    
+    .titulo-final{
+        margin: auto;
+        width: 70%;
+    }
+
+    .ubicacion h1{
+        font-size: 10px;
+    }
+
+    .content-foo h4{
+        font-size: 10px;
+    }
+
+    .titulo-final{
+        font-size: 10px;
+    }
+
+    .titulo{
+        font-size: 14px;
+    }
+
+}
 
   
+

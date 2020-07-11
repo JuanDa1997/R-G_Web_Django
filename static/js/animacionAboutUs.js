@@ -1,13 +1,9 @@
 AOS.init();
 function epa(){
-
     elemento=event.target.id;
     console.log(elemento); 
     
-
-
-    if (elemento == "Notarial") {
-        
+    if (elemento == "Notarial") { 
         Swal.fire({
             title: 'Derecho Notarial',
             html:'<div style="text-align: justify;"><li>Escrituración</li><li>Asesoría de compra y venta de bienes inmuebles</li><li>Hipotecas</li><li>Sucesiones</li></div>',
@@ -20,7 +16,7 @@ function epa(){
     }if (elemento == "Civil"){
         Swal.fire({
             title: 'Derecho Civil',
-            html: '<div style="text-align:justify;"><li>Pertenencia</li><li>Ejecutivos</li><li>Desembargos</li><li>Entre otros</li></div>',
+            html: '<div style="text-align:justify;"><li>Sucesiones</li><li>Pertenencia</li><li>Ejecutivos</li><li>Desembargos</li><li>Entre otros</li></div>',
             imageUrl: '../static/img/law (1).png',
             imageWidth: 100,
             imageHeight: 100,
@@ -51,7 +47,7 @@ function epa(){
     if (elemento == "Conciliaciones"){
         Swal.fire({
             title: 'Conciliaciones',
-            html: '<div style="text-align: justify;"><li>Derecho de familia</li><li>Fijación de alimentos</li><li>Custodia</li><li>salida del país</li></div>',
+            html: '<div style="text-align: justify;"><li>Derecho de familia</li><li>Fijación de alimentos</li><li>Custodia</li><li>salida del país</li><li>Derecho comercial</li><li>Divorcio</li><li>Liquidación de sociedad conyugal</li><li>Insolvencia persona natural no comerciante</li></div>',
             imageUrl: '../static/img/help.png',
             imageWidth: 100,
             imageHeight: 100,
@@ -59,5 +55,20 @@ function epa(){
             footer: '<a href="http://127.0.0.1:8000/Contact/#SecContact">¡Haz click aquí para agendar una cita!</a>'
         });
     }
+}
 
+function SlideMenu(){
+    console.log("entro");
+    document.getElementById('btn-menu').checked = false;  
+}   
+
+function link(){
+    elemento=event.target.id;
+    if (elemento =="instagram") {
+        window.location="https://www.instagram.com/juandavidruizz/";
+    }if (elemento == "whatsapp") {
+       window.location= "https://api.whatsapp.com/send?phone=573104878925&text=Hola me gustaría cotizar un sitio Web"
+    }if (elemento == "facebook"){
+        window.location = "https://www.facebook.com/MediaKing-104698787986444";
+    }  
 }

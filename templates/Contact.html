@@ -1,10 +1,11 @@
 {% load staticfiles %}
 <!DOCTYPE html>
 <html lang="en">
+<link rel="icon" href="../static/img/icon.png">
 <body>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>R&G</title>
+    <title>|R&G| Contáctenos</title>
     <link href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
     <link rel="stylesheet" href="{% static 'css/Contactos.min.css' %}">
     <link rel="stylesheet" href="{% static 'css/libreria.css' %}">
@@ -13,19 +14,16 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">   
     <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-
-    <!-- <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet"> -->
     <header>
         <input type="Checkbox" id="btn-menu">
         <label for="btn-menu"><img src="../static/img/list.png" alt=""></label>
         <nav class="menu">
             <ul>
                 <li><a href="http://127.0.0.1:8000/Home/">Inicio</a></li>
-                <li><a href="http://127.0.0.1:8000/Home/#services">Servicios</a></li>
-                <li><a href="">Contáctenos</a></li>
+                <li><a href="http://127.0.0.1:8000/Home/#services" onclick="SlideMenu()">Servicios</a></li>
+                <li><a class="contacto" href="">Contáctenos</a></li>
                 <li><a href="http://127.0.0.1:8000/AboutUs/">Acerca de</a></li>
-            </ul>
-            
+            </ul>   
         </nav>
         <section class="textos-header">
             <p>
@@ -53,51 +51,29 @@
                     <h3 id="titulo">Correo electrónico</h3>
                     <h3><span><i class="fas fa-envelope-square"></i></i></span> fultonruizlaw@yahoo.com</h3>
                     <h3><span><i class="fas fa-envelope-square"></i></i></span> R&GAbogados_Consultores@outlook.com</h3>
-
-
-
                 </div>
             </div>
         </section>
-        
-    
     </main>
-  
     <footer>
         <div class="contenedor-footer">
-           
-         
             <div class="content-foo">
                 <img src="../static/img/NewGenomaGames2.png" alt="">
-
             </div>
-          
-           
         </div>
         <h2 class="titulo-final">&copy; MediaKing Ingeniería </h2>
         <div class="fab" >
-            <h3 class="fab fa-instagram"></h3>
-            <h3 class="fab fa-facebook"></h3>
-            <h3 class="fab fa-whatsapp"></h3>
+            <h3 class="fab fa-instagram" id="instagram" onclick="link()"></h3>
+            <h3 class="fab fa-facebook" id="facebook" onclick="link()"></h3>
+            <h3 class="fab fa-whatsapp" id="whatsapp" onclick="link()"></h3>
         </div>
-       
-
-        
-
-
     </footer>
-
+    <script type="text/javascript">(function () { var ldk = document.createElement('script'); ldk.type = 'text/javascript'; ldk.async = true; ldk.src = 'https://s.cliengo.com/weboptimizer/5f091998c9a881002afc1455/5f091999c9a881002afc1458.js'; var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ldk, s); })();</script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="{% static 'vendor/jquery/ControlMenu.js' %}"></script>
     <script src="{% static 'vendor/jquery/jquery.min.js' %}"></script>
     <script src="https://kit.fontawesome.com/29b59548f8.js" crossorigin="anonymous"></script>
     <script src="{% static 'js/animacionesContact.js' %}"></script>
     <script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9.15.2/dist/sweetalert2.all.min.js"></script>
-    <!-- <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
-    <script src="{% static 'js/app.js' %}"></script> -->
-
-
-
 </body>
 </html>
