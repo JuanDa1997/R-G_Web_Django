@@ -1,0 +1,156 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<link rel="icon"  href="../static/img/icon.png">
+<body>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>|R&G| Abogados consultores</title>
+    <link href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'css/Contact.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/libreria.css' %}">
+    <link href="{% static 'vendor/fontawesome-free/css/all.min.css' %}" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">   
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <input type="Checkbox" id="btn-menu">
+    <label for="btn-menu">
+        <img src="../static/img/list.png" alt="">
+    </label>
+    <nav class="menu" id="menu">
+        <ul>
+            <li><a class="inicio" href="#">Inicio</a></li>
+            <li><a  id="servicios" href="#services" onclick="SlideMenu()" >Servicios</a></li>
+            <li><a  href="http://127.0.0.1:8000/Contact/">Contáctenos</a></li>
+            <li><a  href="http://127.0.0.1:8000/AboutUs/">Acerca de</a></li>
+        </ul>
+    </nav>
+    <header>
+        <section class="textos-header">
+            <img src="../static/img/13x18.png" alt="">
+            <div class="texto-AboutUs">
+                <p>
+                    Iustitiae comes de divinitatis
+                    <span>
+                            R & g <br>
+                        ABOGADOS
+                    </span>
+                    &mdash; since 1998 &mdash;
+                </p>
+            </div>
+        </section>
+        <svg class="wave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <path fill="white" fill-opacity="1" d="M0,256L1440,160L1440,320L0,320Z"></path>
+          </svg>
+    </header>
+    <main>
+        <section class="contenedor sobre-nosotros" id="sec1">
+            <h2 class="titulo">Nuestra firma</h2>
+            <div class="contenedor-sobre-nosotros"data-aos="fade-up" data-aos-duration="1000" >
+                <img class="AboutUs" src="../static/img/diosa.png" >
+                <div class="contenido-textos">
+                    <h3><span><i class="fas fa-globe"></i></span>Asesoramos 100% online</h3>
+                    <p>Ahora puedes gestionar tus asesorías jurídicas por internet sin la necesidad de dejar tu hogar.</p>
+                    <h3><span><i class="fas fa-briefcase"></i></span>Especialistas para cada ocasión</h3>
+                    <p>Nuestros profesionales estan capacitados en las diferentes ramas del derecho para dar solución a cualquier solicitud con la mayor eficacia y brevedad posible.</p>
+                    <h3><span><i class="fas fa-hands-helping"></i></span>Experiencia y confiablidad</h3>
+                    <p>Nuestra firma cuenta con más de 15 años de experiencia garantizando la confiabilidad y éxito de nuestros clientes.</p>
+                    <h3><span><i class="fas fa-hand-holding-usd"></i></span>Los mejores  precios en consultoría</h3>
+                    <p>Para todos nuestros clientes ofrecemos el 10% de descuento en todas las consultorías. Si eres nuevo en R & G abogados consultores, pregunta por el 10% de descuento en el primer proceso que se adelante.</p>
+                </div>
+            </div>
+        </section>
+        <section class="Noticias" id="sec2">
+            <div class="contenedor">
+                <h2 class="titulo">Últimas noticias</h2>
+                <div class="slider-contenedor">
+                    <div class="slider-test">
+                        <blockquote class="twitter-tweet"><p lang="es" dir="ltr">Trabajamos en el <a href="https://twitter.com/hashtag/AccesoALaJusticia?src=hash&amp;ref_src=twsrc%5Etfw">#AccesoALaJusticia</a> en las regiones. Nuestro empeño es que todas las autoridades municipales y departamentales conozcan la oferta y la puedan incluir en sus planes de desarrollo. Consulte en <a href="https://t.co/fuR5mexm58">https://t.co/fuR5mexm58</a> <a href="https://t.co/66DDXr6kPV">pic.twitter.com/66DDXr6kPV</a></p>&mdash; MinJusticia Colombia (@MinjusticiaCo) <a href="https://twitter.com/MinjusticiaCo/status/1281604090166820870?ref_src=twsrc%5Etfw">July 10, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                    </div>   
+                    <div class="slider-test">
+                        <blockquote class="twitter-tweet"><p lang="es" dir="ltr">¡Evita salir de casa! Para evitar desplazamientos, gestiona tus solicitudes ante el Ministerio de Justicia y del Derecho a través de su canal de atención virtual 👉 <a href="https://t.co/YO2ExjnoKU">https://t.co/YO2ExjnoKU</a> <a href="https://t.co/LRr8It2DX9">pic.twitter.com/LRr8It2DX9</a></p>&mdash; MinJusticia Colombia (@MinjusticiaCo) <a href="https://twitter.com/MinjusticiaCo/status/1281588990861344776?ref_src=twsrc%5Etfw">July 10, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                    </div>   
+                    <div class="slider-test">
+                        <blockquote class="twitter-tweet"><p lang="es" dir="ltr">Cárceles: 19.918 personas han salido desde que se decretó emergencia por COVID-19. Vía <a href="https://twitter.com/NoticiasUno?ref_src=twsrc%5Etfw">@NoticiasUno</a><a href="https://t.co/WmxfGg2xN1">https://t.co/WmxfGg2xN1</a></p>&mdash; MinJusticia Colombia (@MinjusticiaCo) <a href="https://twitter.com/MinjusticiaCo/status/1281351926215372800?ref_src=twsrc%5Etfw">July 9, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                    </div>
+                    <div class="slider-test">
+                        <blockquote class="twitter-tweet"><p lang="es" dir="ltr">Hacinamiento carcelario está en su punto más bajo desde el 2011. Vía <a href="https://twitter.com/ELTIEMPO?ref_src=twsrc%5Etfw">@ELTIEMPO</a> <a href="https://t.co/xvC5OAokKT">https://t.co/xvC5OAokKT</a></p>&mdash; MinJusticia Colombia (@MinjusticiaCo) <a href="https://twitter.com/MinjusticiaCo/status/1281345790456233986?ref_src=twsrc%5Etfw">July 9, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                    </div>
+                </div>
+            </div>    
+        </section>
+        <section class="clientes contenedor" >
+            <h2 class="titulo">¿Qué dicen nuestros clientes?</h2>
+            <div class="cards" data-aos="fade-up" data-aos-duration="1000">
+                <div class="card">
+                    <img src="../static/img/3.jpg" alt="">
+                    <div class="contenido-texto-card">
+                        <h4>Casa de la dirección hidráulica</h4>
+                        <p>El servicio y acompañamiento siempre fue evidente en todos los procesos que implicaba el caso.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="../static/img/1.jpg" alt="">
+                    <div class="contenido-texto-card">
+                        <h4>Fundafas</h4>
+                        <p>Son profesionales íntegros que siempre van de la mano con la justicia y la ética profesional.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="Divisor"></div>
+        <section class="about-services" id="services">
+            <div class="contenedor">
+                <h2 class="titulo">Nuestros servicios</h2>
+                <div class="servicio-cont" data-aos="fade-up" data-aos-duration="1000">
+                    <div class="servicio-ind">
+                        <img  id="Notarial"  src="../static/img/law.png"onclick="epa()">
+                        <h3>Derecho notarial</h3>
+                    </div>
+                    <div class="servicio-ind" >
+                        <img id="Civil" src="../static/img/law (1).png" onclick="epa()">
+                        <h3>Derecho civil</h3>
+                    </div>
+                    <div class="servicio-ind" >
+                        <img id="Pension" src="../static/img/retirement.png" onclick="epa()">
+                        <h3>Pensión</h3>
+                    </div>
+                    <div class="servicio-ind" id="Laboral">
+                        <img id="Laboral" src="../static/img/worker.png" onclick="epa()">
+                        <h3>Derecho laboral</h3>
+                    </div>
+                    <div id="Conciliaciones" class="servicio-ind" >
+                        <img id="Conciliaciones" src="../static/img/help.png" onclick="epa()">
+                        <h3>Conciliaciones</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="Divisor"></div>
+    </main>
+    <div class="ubicacion">
+        <h1>Nuestra ubicación</h1>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3982.573900495293!2d-76.53544148563995!3d3.4532546974865763!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e30a6658be50473%3A0x9093ddc5a62c2e31!2sEdificio%20Jorge%20Garces%20Borrero!5e0!3m2!1ses!2sco!4v1593533670957!5m2!1ses!2sco" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+    </div>
+    <footer>
+        <div class="contenedor-footer">
+            <div class="content-foo">
+                <img src="../static/img/NewGenomaGames2.png" alt="">
+
+            </div>
+        </div>
+        <h2 class="titulo-final">&copy; MediaKing Ingeniería </h2>
+        <div class="fab" >
+            <h3 class="fab fa-instagram" id="instagram" onclick="link()"></h3>
+            <h3 class="fab fa-facebook" id="facebook" onclick="link()"></h3>
+            <h3 class="fab fa-whatsapp" id="whatsapp" onclick="link()"></h3>
+        </div>
+    </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="{% static 'vendor/jquery/jquery.min.js' %}"></script>
+    <script src="https://kit.fontawesome.com/29b59548f8.js" crossorigin="anonymous"></script>
+    <script src="{% static 'js/animacionHome.js' %}"></script>
+    <script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9.15.2/dist/sweetalert2.all.min.js"></script>
+</body>
+</html>

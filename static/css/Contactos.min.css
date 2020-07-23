@@ -1,0 +1,750 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;    
+}
+
+.contenedor{
+    padding: 70px 0;
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.titulo{
+    color: #642a73;
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+/* Header */
+header{
+    width: 100%;
+    height: 800px;
+    background-image: linear-gradient(to top, #48c6ef 0%, #6f86d6 100%);
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+
+.menu .contacto{
+    color: silver;
+}
+
+#btn-menu{
+    display: none;
+}
+
+header label{
+    margin: 10px;
+    padding: 20px;
+    background-color: #30cfd0;
+    border-radius: 50%;
+    display: none;
+}
+/* titulo animado */
+@import url(https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap);
+
+.textos-header p{
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: .5em;
+  display: inline-block;
+  border: 4px double rgba(255, 255, 255, 0.596);
+  border-width: 4px 0;
+  padding: 1.5em 0em;
+  position: absolute;
+  top: 18%;
+  left: 50%;
+  width: 40em;
+  margin: 0 0 0 -20em;
+}
+
+.textos-header span{
+    background-image: -webkit-linear-gradient(rgb(255, 72, 0) 50%, rgb(255, 255, 255) 50%);
+    background-repeat: repeat-y;
+    background-position: 0 0;
+    background-size: 100% 50px;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    -webkit-animation: stripes 5s linear infinite;
+    animation: stripes 5s linear infinite;
+}
+
+@-webkit-keyframes stripes {
+  0% {
+    background-position: 0 -50px;
+  }
+}
+
+@keyframes stripes {
+  0% {
+    background-position: 0 -50px;
+  }
+}
+
+.textos-header span{
+  font: 500 4em/1 "poppins", sans-serif;
+  letter-spacing: 0;
+  padding: .25em 0 .325em;
+  display: block;
+  margin: 0 auto;
+}
+
+.texto-AboutUs{
+    width: 50%;
+    position: absolute;
+    z-index: 5;
+    top: 0;
+    right: 200px;
+    padding-top: 1200px;
+}
+
+header label img{
+    width: 40px;
+}
+
+header label:hover{
+    cursor:pointer;
+}
+
+.menu{
+    width: 100%;
+    padding: 10px;
+    height: 50px; 
+    background-color: rgba(0, 0, 0, 0.726);
+    position: fixed;
+    z-index: 20;
+    backdrop-filter: blur(10px); 
+}
+
+.menu ul  {
+    list-style: none;
+    color: white;
+    display: flex;
+    float: right;
+}
+
+.menu ul li a{
+    text-decoration: none;
+    padding:20px 30px 0 0;
+    color: white; 
+}
+
+.menu ul li a:hover{
+    color: silver;
+    transition: all .5s;
+}
+
+.wave{
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
+
+.textos-header{
+    height: inherit;
+    padding-top: 40px;
+}
+
+.textos-header img{
+    width: 35%;    
+}
+/* aboutus */
+.contenedor-sobre-nosotros{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.AboutUs{
+    width: 30%;
+    height: 30%;
+}
+
+.sobre-nosotros .contenido-textos{
+    width: 58%;    
+}
+
+.contenido-textos h3{
+    margin-bottom: 15px;
+    font-size: 30px;
+}
+
+.contenido-textos  span{
+    background-image: linear-gradient(to right, #6a11cb 0%, #2575fc 100%);
+    color: #fff;
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    padding: 2px;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
+    margin-right: 5px;
+    font-size: 20px;
+}
+/* footer */
+footer{
+    background: #414141;
+    padding: 60px 0 30px 0;
+    margin: auto;
+    overflow: hidden;
+}
+
+.contenedor-footer{
+    display: flex;
+    width: 90%;
+    justify-content: space-evenly;
+    margin: auto;
+    padding-bottom: 50px;
+    border-bottom: 1px solid #ccc; 
+}
+
+.content-foo{
+    text-align: center;
+}
+
+.titulo-final{
+    text-align: center;
+    font-size: 24px;
+    margin: 20px 0 0 0;
+    color:#9e9797;
+}
+
+.fab{
+    padding-top: 10px;
+    width: 100%;
+    text-align: center;
+}
+
+.fa-whatsapp{
+    width: 1%;
+    font-size: 30px;
+    text-align: center;
+    padding-right: 30px;
+    background-position: center;
+    color:#9e9797;
+}
+
+.fa-instagram{
+    width: 1%;
+    color:#9e9797;
+    font-size: 30px;
+    text-align: center;
+    padding-right: 30px;
+    background-position: center;
+}
+
+.fa-facebook{
+    width: 1%;
+    color:#9e9797;
+    font-size: 30px;
+    text-align: center;
+    padding-right: 30px;
+    background-position: center;
+}
+/* hover */
+.fa-whatsapp:hover{ 
+   color: yellowgreen;
+   transition: all .5s;
+}
+
+
+.fa-instagram:hover{
+    color: red;
+    transition: all .5s;
+}
+
+.fa-facebook:hover{
+   color: royalblue;
+   transition: all .5s;
+}
+
+.content-foo img{
+    width: 20%;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+@media screen and (max-width:1024px){
+    header{
+        background-position:center ;
+        height: 700px;
+    }
+
+    .textos-header p{
+        margin-top:100px ;
+        font-size: 9px;
+    }
+    
+    .textos-header{
+       text-align: center;
+    }
+  
+    .contenedor-sobre-nosotros{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .sobre-nosotros .contenido-textos{
+        width: 95%;   
+    }
+
+    .sobre-nosotros .contenido-textos h3{
+        font-size: 30px; 
+        text-align: left;
+        color: black;
+    }
+    
+    .contenedor-footer{
+        margin-bottom: 20px;
+    }
+
+    .AboutUs{
+        width: 40%;
+    }
+
+    .titulo-final{
+        margin: auto;
+        width: 70%;
+    }
+
+  
+}
+
+@media screen and (max-width:700px){
+    header{
+        height: 500px;
+    }
+     
+    .contenido-textos  span{
+        text-align: center;
+        width: 17px;
+        height: 17px;
+        padding: 2px;
+        margin-right: 5px;
+        font-size: 11px;
+    }
+
+    header label {
+        display: block;
+        position: fixed;
+        z-index: 100;
+    }
+    .textos-header p{
+        margin-top:25px ;
+        font-size: 9px;
+    }
+
+    .titulo{
+        font-size: 25px;
+    }
+
+    .sobre-nosotros .contenido-textos h3{
+        font-size: 20px; 
+        text-align: left;
+        color: black;
+    }
+
+    .menu{
+        padding: 20px 20px 0 0;
+        padding-top: 100px;
+        padding-left: 30px;
+        background: slateblue;
+        height: 100%;
+        width: 100%;
+        margin-top: -2000px;
+        transition: all 1s;
+    }
+
+    .menu ul{
+        width: 90%;
+        flex-direction: column;
+        float: left;
+    }
+
+    .menu li{
+        width: 90%;
+        border-top: 1px solid #fff;
+        padding: 20px 20px 0 0;
+        padding-bottom:15px;      
+    }
+
+    #btn-menu:checked ~ .menu{
+        margin: 0;
+    }  
+    .contenedor-footer img{
+        width: 10%;
+    }
+
+    .content-foo img{
+        width: 20%;
+    }  
+}
+
+@media screen and (max-width:513px){
+    #titulo{
+        text-align: center;
+        color: #6a11cb;
+        font-size: 25px;
+    }
+
+    .sobre-nosotros .contenido-textos h3{
+        font-size: 20px; 
+        text-align: center;        
+        color: black;
+        
+    }
+
+    .AboutUs{
+        width: 70%;
+        margin-bottom: 30px;
+    }
+
+    .titulo-final{
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width:500px){
+    .textos-header{
+        text-align: center;
+    }
+    .textos-header p{
+        margin-top:100px ;
+        font-size:7px;
+    }
+
+    header{
+        background-position: center;
+        height: 500px; 
+    } 
+
+    /* aboutus */
+    .contenedor-sobre-nosotros{
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .AboutUs{
+        margin-bottom: 60px;
+        width: 70%;
+    }
+
+    .sobre-nosotros .contenido-textos{
+        width: 95%;
+    }
+
+
+    .content-foo{
+        text-align: center;
+    }
+
+    .content-foo h4{
+        border: none;
+    }
+
+    .content-foo p{
+        color: #ccc;
+        border-bottom: 1px solid #f2f2f2;
+        padding-bottom: 20px;
+    }
+
+    .titulo-final{
+        font-size: 20px;
+    }
+
+    .titulo{
+        font-size: 25px;
+    }
+
+    .content-foo img{
+        width: 20%;
+    }
+}
+
+@media screen and (max-width:414px) {
+    header{
+        height: 500px;
+    }
+
+    .wave{
+        display: none;
+    }
+
+    .textos-header p{
+        margin-top:100px ;
+        font-size: 7px;
+    }
+}
+
+
+
+@media screen and (max-width:360px) {
+    header{
+        height: 400px;
+    }
+
+    .contenido-textos span{
+        display: none;
+    }
+    
+    .menu{
+        padding: 20px 20px 0 0;
+        padding-top: 100px;
+        padding-left: 30px;
+        background: slateblue;
+        height: 100%;
+        width: 100%;
+        transition: all 1s;
+    }
+
+    .wave{
+        display: none;
+    }
+
+    .textos-header p{
+        margin-top:100px ;
+        font-size: 6px;    
+    }
+
+  
+}
+
+@media screen and (max-width:320px) {
+    header{
+        height: 400px;
+    }
+
+    .textos-header p{
+        margin-top:100px ;
+        font-size: 6px;   
+    }
+
+    header label{
+        margin: 10px;
+        padding: 10px;
+        background-color: #30cfd0;
+        border-radius: 50%;
+    }
+
+    header label img{
+        width: 30px;
+    }
+
+    .contenido-textos2 h3{
+        font-size: 15px;
+    }
+
+    .contenedor-sobre-nosotros .contenido-textos h3{
+        font-size: 15px;
+    }
+
+    #titulo{
+        font-size: 20px;
+    }
+
+    .titulo-final{
+        font-size: 15px;
+    }
+
+    .titulo{
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width:280px) {
+    header{
+        height: 400px;
+    }
+     
+    .contenido-textos  span{
+        text-align: center;
+        width: 14px;
+        height: 14px;
+        padding: 1px;
+        margin-right: 5px;
+        font-size: 10px;
+    }
+
+    .titulo{
+        font-size: 15px;
+    }
+
+    .textos-header p{
+        margin-top:100px ;
+        font-size: 4px;
+    }
+
+    .menu li{
+        font-size: 10px;
+    }
+
+    header label{
+        margin: 10px;
+        padding: 7px;
+        background-color: #30cfd0;
+        border-radius: 50%;
+    }
+
+    header label img{
+        width: 23px;
+    }
+    
+    .menu{
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width:266px) {
+    header{
+        height: 400px;
+    }
+    
+    header label{
+        margin: 10px;
+        padding: 7px;
+        background-color: #30cfd0;
+        border-radius: 50%;
+    }
+
+    header label img{
+        width: 23px;
+    }
+
+    .menu li{
+        font-size: 10px;
+    }
+    
+}
+
+@media screen and (max-width:250px) {
+    .contenedor-sobre-nosotros .contenido-textos h3{
+        font-size: 12px;    
+    }
+
+    #titulo{
+        font-size: 17px;
+    }
+
+    .titulo{
+        font-size: 17px;
+    }
+
+    .titulo-final{
+        font-size: 12px;
+    }
+}
+
+
+
+@media screen and (max-width:200px) {
+    header{
+        height: 200px;
+    }
+
+    .textos-header p{
+        font-size: 3px;
+    }
+
+    .menu{
+        padding: 20px 20px 0 0;
+        padding-top: 100px;
+        padding-left: 30px;
+        background: slateblue;
+        height: 100%;
+        width: 100%;
+        transition: all 1s;
+    }
+
+    .textos-header{
+        align-items: center;
+        padding-top: 200px; 
+    }
+
+    .wave{
+        display: none;
+    }
+    
+    .wave{
+        display: none;
+    }
+    .slider-contenedor{
+        height: 800px;
+    }
+
+    .contenedor-sobre-nosotros{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;   
+    }
+
+
+    .contenido-textos  span{
+        display: none;
+    }
+
+    
+    .AboutUs{
+        width: 50%;
+    }
+    /* noticias */
+    .slider-contenedor{
+        height: 600px;
+    }
+
+    .titulo-final{
+        margin: auto;
+        width: 70%;
+    }
+
+    .content-foo h4{
+        font-size: 20px;
+    }
+
+    header label{
+        margin: 10px;
+        padding: 7px;
+        background-color: #30cfd0;
+        border-radius: 50%;
+    }
+
+    header label img{
+        width: 23px;
+    }
+    
+    .textos-header p{
+        font-size: 3px;
+        margin-top: 50px;     
+    }
+
+    .contenedor-sobre-nosotros .contenido-textos h3{
+        font-size: 10px;    
+    }
+
+    #titulo{
+        font-size: 15px;
+    }
+
+    .titulo{
+        font-size: 15px;
+    }
+
+  
+  
+}
+
+
+
+
+
